@@ -40,6 +40,12 @@ header {
   align-items: center;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
 .icon {
   width: 1.88213rem;
   height: 2.17888rem;
@@ -57,10 +63,14 @@ h2 {
   letter-spacing: -0.042rem;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;
+.logout-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.logout-btn img {
+  display: block;
 }
 
 /* 3. 회원가입 폼 */
@@ -98,7 +108,7 @@ input:focus-visible {
 }
 
 .signup_btn {
-  margin-top: 1.25rem;
+  margin-top: 1.56rem;
   display: flex;
   width: 34.125rem;
   height: 4.25rem;
