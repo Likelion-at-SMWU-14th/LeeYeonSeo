@@ -16,10 +16,6 @@ body {
   background-attachment: fixed;
 }
 
-input {
-  font-family: inherit;
-}
-
 /* 1. 로그인 박스 */
 div {
   position: absolute;
