@@ -75,6 +75,7 @@ input:focus-visible {
 }
 
 .login_btn {
+  cursor: pointer;
   margin-top: 1.25rem;
   display: flex;
   width: 34.125rem;

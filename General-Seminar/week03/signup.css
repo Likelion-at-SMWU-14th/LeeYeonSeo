@@ -108,6 +108,7 @@ input:focus-visible {
 }
 
 .signup_btn {
+  cursor: pointer;
   margin-top: 1.56rem;
   display: flex;
   width: 34.125rem;
