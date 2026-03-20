@@ -15,12 +15,12 @@
           <img class="icon" src="{% static 'images/icon.svg' %}" />
           <h2>회원가입하기</h2>
         </div>
-        <button type="button" class="logout-btn">
-          <img src="{% static 'images/logout.svg' %}" alt="로그아웃" />
-        </button>
+        <a href="{% url 'login' %}" class="out-btn">
+          <img src="{% static 'images/out.svg' %}" />
+        </a>
       </header>
       <form name="signup" method="post" onsubmit="return checkPassword();">
-      {% csrf_token %}
+        {% csrf_token %}
         <section class="signup_section">
           <span>이름</span>
           <input
