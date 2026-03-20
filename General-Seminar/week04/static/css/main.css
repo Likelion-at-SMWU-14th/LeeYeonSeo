@@ -16,8 +16,8 @@ body {
   background-attachment: fixed;
 }
 
-/* 1. 로그인 성공! 박스 */
-.success-box {
+/* 1. 로그인 박스 */
+.box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,8 +74,8 @@ h2 {
   display: block;
 }
 
-/* 3. 로그인 성공 멘트 */
-.success-ment {
+/* 3. 로그인 멘트 */
+.ment {
   margin: auto 0;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ h2 {
   align-items: center;
 }
 
-.success-ment h3 {
+.ment h3 {
   margin: 0;
   color: #fff;
   text-align: center;
@@ -95,7 +95,7 @@ h2 {
   letter-spacing: -0.042rem;
 }
 
-.success-ment p {
+.ment p {
   margin: 0;
   text-align: center;
   color: #fff;
@@ -107,7 +107,7 @@ h2 {
   letter-spacing: -0.042rem;
 }
 
-.success-ment span {
+.ment span {
   color: #ee7521;
 }
 
