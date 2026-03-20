@@ -63,13 +63,13 @@ h2 {
   letter-spacing: -0.042rem;
 }
 
-.logout-btn {
+.out-btn {
   background: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
 }
-.logout-btn img {
+.out-btn img {
   display: block;
 }
 
