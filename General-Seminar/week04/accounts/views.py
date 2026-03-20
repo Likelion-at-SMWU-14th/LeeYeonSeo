@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import SignupForm
+from django.contrib.auth import authenticate, login as auth_login #사용자인증
 
 def signup(request):
     if request.method == "POST": # 사용자가 회원가입 버튼을 눌렀을 때
@@ -11,3 +12,17 @@ def signup(request):
        form = SignupForm() # 빈 폼을 생성한다
     return render(request, "signup.html", {"form": form}) # signup.html을 사용자에게 보여줌 + form 데이터를 html로 전달
 # Create your views here.
+
+def login(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            auth_login(request, user)
+            return redirect("main")
+
+    return render(request, "login.html")
+     
