@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Pretendard Variable";
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/variable/pretendardvariable.min.css")
-    format("woff2");
-  font-weight: 45 920;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
 body {
   min-height: 100vh;
@@ -63,6 +56,24 @@ form {
   gap: 0.94rem;
 }
 
+input {
+  width: 34.125rem;
+  height: 4rem;
+  border-radius: 0.625rem;
+  background: #404040;
+  border: none;
+  padding-left: 1.56rem;
+  box-sizing: border-box;
+
+  /* 폰트 */
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 136%; /* 1.53rem */
+  letter-spacing: -0.0315rem;
+}
+
 input::placeholder {
   color: #b6b6b6;
 }
@@ -92,24 +103,6 @@ input:focus-visible {
   font-weight: 600;
   line-height: 136%; /* 1.87rem */
   letter-spacing: -0.0385rem;
-}
-
-input {
-  width: 34.125rem;
-  height: 4rem;
-  border-radius: 0.625rem;
-  background: #404040;
-  border: none;
-  padding-left: 1.56rem;
-  box-sizing: border-box;
-
-  /* 폰트 */
-  color: #fff;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 136%; /* 1.53rem */
-  letter-spacing: -0.0315rem;
 }
 
 /* 4. 아직 회원이 아니신가요? 회원가입하기 */
