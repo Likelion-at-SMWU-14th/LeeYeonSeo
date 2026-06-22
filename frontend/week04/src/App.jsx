@@ -1,23 +1,18 @@
-import "./App.css";
+import './App.css'
+import LionCard1 from './components/LionCard1'
+import LionCard2 from './components/LionCard2'
+import LionCard3 from './components/LionCard3'
 
 function App() {
+  const liar = '가짜 아기사자'
   return (
     <>
-      <h1 className="title">Prettier 적용 전</h1>
-      <p>넘 번잡시럽고 복잡하지요?</p>
-      <button
-        onClick={() => {
-          alert("버튼 클릭!");
-        }}
-      >
-        클릭해보기
-      </button>
-      <div className="card">
-        <h2>React Seminar</h2>
-        <p>Prettier가 코드를 어떻게 정리하는지 확인해봅시다!</p>
-      </div>
+      <h1>{liar}를 찾아라!</h1>
+      <LionCard1 />
+      <LionCard2 />
+      <LionCard3 />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
