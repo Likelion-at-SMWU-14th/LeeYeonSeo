@@ -38,7 +38,7 @@ export const ButtonGrid = styled.div`
   width: 100%;
 `;
 
-export const TemporaryButton = styled.div`
+export const CalcButton = styled.div`
   min-height: 5rem;
 
   display: flex;
