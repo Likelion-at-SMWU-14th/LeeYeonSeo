@@ -45,5 +45,7 @@ export const CalcButton = styled.div`
   justify-content: center;
   align-items: center;
 
+  grid-column: span ${({ $span }) => $span};
+
   font-size: 1.5rem;
 `;
