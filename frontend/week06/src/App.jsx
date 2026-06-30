@@ -1,12 +1,10 @@
 import "./App.css";
-import Info from "./components/Info";
-import DebouncedSearch from "./components/DebouncedSearch";
+import Movie from "./components/Movie";
 
 function App() {
   return (
     <>
-      <Info />
-      <DebouncedSearch />
+      <Movie />
     </>
   );
 }
