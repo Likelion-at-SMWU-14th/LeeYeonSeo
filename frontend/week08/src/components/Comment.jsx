@@ -21,7 +21,7 @@ const lionColors = [
   },
 ];
 
-const Comment = () => {
+const Comment = ({ comment }) => {
   const randomColor = useMemo(() => {
     const randomIndex = Math.floor(Math.random() * lionColors.length);
     return lionColors[randomIndex];
@@ -35,13 +35,11 @@ const Comment = () => {
           lionColor={randomColor.lionColor}
         />
         <HeaderInfo>
-          <Author>김사자</Author>
-          <DateTime>2026-6-25 00:00</DateTime>
+          <Author>{comment.author}</Author>
+          <DateTime>{comment.timestamp}</DateTime>
         </HeaderInfo>
       </HeaderContainer>
-      <CommentText>
-        코멘트 내용이 들어갑니다 코멘트 내용이 들어갑니다
-      </CommentText>
+      <CommentText>{comment.comment}</CommentText>
     </CommentContainer>
   );
 };
@@ -49,13 +47,13 @@ const Comment = () => {
 export default Comment;
 
 const CommentContainer = styled.div`
-  display: inline-flex;
+  display: flex;
   padding: 2.25rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
   border-radius: 0.4375rem;
-  background: var(--bg-white);
+  background-color: var(--bg-white);
 `;
 
 const HeaderContainer = styled.div`
@@ -87,7 +85,7 @@ const DateTime = styled.p`
 
 const CommentText = styled.p`
   margin: 0;
-  width: 18.1875rem;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   color: var(--text-black);
