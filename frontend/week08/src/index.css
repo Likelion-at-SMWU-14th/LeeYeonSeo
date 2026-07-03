@@ -2,8 +2,10 @@
 
 :root {
   --text-black: #000;
-  --bg-white: #fff;
   --text-grey: #b2ada9;
+
+  --bg-white: #fff;
+  --bg-brown: #f5f1ed;
 
   --lion-bg-orange: hsla(30, 85%, 92%, 1);
   --lion-orange: hsla(30, 100%, 45%, 1);
