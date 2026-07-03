@@ -23,4 +23,6 @@ const ButtonContainer = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: none;
+  cursor: pointer;
 `;
