@@ -9,7 +9,7 @@ const Header = ({ title, description, button }) => {
         <Title>{title}</Title>
         <Description>{description}</Description>
       </HeaderInfo>
-      {button && <Button text="TMI 작성하기" onBtnClick={() => {}} />}
+      {button && <Button text="TMI 작성하기" />}
     </HeaderContainer>
   );
 };
@@ -24,7 +24,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.875rem;
-  border-bottom: 1px solid #b0a297;
+  border-bottom: 1px solid var(--text-brown);
   background: rgba(255, 255, 255, 0.9);
 `;
 
@@ -43,7 +43,7 @@ const Title = styled.h1`
 
 const Description = styled.p`
   margin: 0;
-  color: #b0a297;
+  color: var(--text-brown);
   font-size: 1.25rem;
   font-weight: 500;
 `;
