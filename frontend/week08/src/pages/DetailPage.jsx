@@ -12,8 +12,8 @@ const DetailPage = () => {
     <DetailPageWrapper>
       <DetailComment comment={comment} />
       <ButtonWrapper>
-        <Button text="수정하기" onBtnClick={() => {}} />
-        <Button text="삭제하기" onBtnClick={() => {}} />
+        <Button text="수정하기" />
+        <Button text="삭제하기" />
       </ButtonWrapper>
     </DetailPageWrapper>
   );
