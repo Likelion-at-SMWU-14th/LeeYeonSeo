@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = ({ text, onBtnClick }) => {
+const Button = ({ text, onBtnClick = () => {} }) => {
   return (
     <ButtonContainer onClick={onBtnClick}>{text || "버튼"}</ButtonContainer>
   );
