@@ -1,39 +1,11 @@
-import { useMemo } from "react";
 import styled from "styled-components";
 import LionIcon from "./LionIcon";
 
-const lionColors = [
-  {
-    bgColor: "var(--lion-bg-orange)",
-    lionColor: "var(--lion-orange)",
-  },
-  {
-    bgColor: "var(--lion-bg-blue)",
-    lionColor: "var(--lion-blue)",
-  },
-  {
-    bgColor: "var(--lion-bg-green)",
-    lionColor: "var(--lion-green)",
-  },
-  {
-    bgColor: "var(--lion-bg-purple)",
-    lionColor: "var(--lion-purple)",
-  },
-];
-
 const Comment = ({ comment }) => {
-  const randomColor = useMemo(() => {
-    const randomIndex = Math.floor(Math.random() * lionColors.length);
-    return lionColors[randomIndex];
-  }, []);
-
   return (
     <CommentContainer>
       <HeaderContainer>
-        <LionIcon
-          bgColor={randomColor.bgColor}
-          lionColor={randomColor.lionColor}
-        />
+        <LionIcon />
         <HeaderInfo>
           <Author>{comment.author}</Author>
           <DateTime>{comment.timestamp}</DateTime>
