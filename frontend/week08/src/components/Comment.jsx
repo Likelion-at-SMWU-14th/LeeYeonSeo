@@ -62,6 +62,7 @@ const CommentText = styled.p`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  word-break: break-all;
   font-size: 1.25rem;
   font-weight: 400;
 `;
