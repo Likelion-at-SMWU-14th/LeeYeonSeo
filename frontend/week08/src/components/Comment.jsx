@@ -58,9 +58,9 @@ const DateTime = styled.p`
 const CommentText = styled.p`
   margin: 0;
   width: 100%;
+  color: var(--text-black);
   overflow: hidden;
   white-space: nowrap;
-  color: var(--text-black);
   text-overflow: ellipsis;
   font-size: 1.25rem;
   font-weight: 400;
