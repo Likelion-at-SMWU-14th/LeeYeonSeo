@@ -2,14 +2,16 @@ import React from "react";
 import Button from "../components/Button";
 import CommentForm from "../components/CommentForm";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const WritePage = () => {
+  const navigate = useNavigate();
   return (
     <WritePageWrapper>
       <CommentForm />
       <ButtonWrapper>
         <Button text="작성하기" />
-        <Button text="취소" />
+        <Button text="취소" onBtnClick={() => navigate(-1)} />
       </ButtonWrapper>
     </WritePageWrapper>
   );
