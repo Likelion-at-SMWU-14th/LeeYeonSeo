@@ -1,15 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ title, description, button }) => {
+  const navigate = useNavigate();
+
   return (
     <HeaderContainer>
       <HeaderInfo>
         <Title>{title}</Title>
         <Description>{description}</Description>
       </HeaderInfo>
-      {button && <Button text="TMI 작성하기" />}
+      {button && (
+        <Button text="TMI 작성하기" onBtnClick={() => navigate("/write")} />
+      )}
     </HeaderContainer>
   );
 };
