@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
 import styled from "styled-components";
-import { COMMENT_DATA } from "../constant/comment";
 import DetailComment from "../components/DetailComment";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -13,7 +12,7 @@ const DetailPage = () => {
 
   const getDetail = (id) => {
     axios
-      .get(`http://127.0.0.1:8000/entries/${id}`)
+      .get(`http://127.0.0.1:8000/entries/${id}/`)
       .then((res) => {
         console.log(res);
         setDetail(res.data);
@@ -29,7 +28,7 @@ const DetailPage = () => {
 
   return (
     <DetailPageWrapper>
-      <DetailComment comment={detail} />
+      <DetailComment detail={detail} />
       <ButtonWrapper>
         <Button text="수정하기" />
         <Button text="삭제하기" />

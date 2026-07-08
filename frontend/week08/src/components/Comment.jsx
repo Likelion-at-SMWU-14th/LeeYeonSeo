@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import LionIcon from "./LionIcon";
+import { useNavigate } from "react-router-dom";
 
 const Comment = ({ comment }) => {
+  const navigate = useNavigate();
+
+  const goToDetailPage = () => {
+    navigate(`/detail/${comment.id}`);
+  };
   return (
-    <CommentContainer>
+    <CommentContainer onClick={goToDetailPage}>
       <HeaderContainer>
         <LionIcon />
         <HeaderInfo>
@@ -26,6 +32,7 @@ const CommentContainer = styled.div`
   gap: 1.25rem;
   border-radius: 0.4375rem;
   background-color: var(--bg-white);
+  cursor: pointer;
 `;
 
 const HeaderContainer = styled.div`
