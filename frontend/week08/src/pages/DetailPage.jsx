@@ -7,10 +7,10 @@ import { useParams } from "react-router-dom";
 
 const DetailPage = () => {
   const { id } = useParams();
-  const comment = COMMENT_DATA.find((comment) => comment.id === Number(id));
+  const detail = COMMENT_DATA.find((comment) => comment.id === Number(id));
   return (
     <DetailPageWrapper>
-      <DetailComment comment={comment} />
+      <DetailComment detail={detail} />
       <ButtonWrapper>
         <Button text="수정하기" />
         <Button text="삭제하기" />

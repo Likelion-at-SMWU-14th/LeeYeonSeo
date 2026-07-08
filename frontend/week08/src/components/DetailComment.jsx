@@ -4,7 +4,7 @@ import LionIcon from "../components/LionIcon";
 import Out from "../assets/Out.svg";
 import { useNavigate } from "react-router-dom";
 
-const DetailComment = ({ comment }) => {
+const DetailComment = ({ detail }) => {
   const navigate = useNavigate();
   return (
     <DetailCommentWrapper>
@@ -14,11 +14,11 @@ const DetailComment = ({ comment }) => {
       <ProfileWrapper>
         <LionIcon />
         <InfoWrapper>
-          <Author>{comment.author}</Author>
-          <DateTime>{comment.timestamp}</DateTime>
+          <Author>{detail.author}</Author>
+          <DateTime>{detail.timestamp}</DateTime>
         </InfoWrapper>
       </ProfileWrapper>
-      <CommentText>{comment.comment}</CommentText>
+      <CommentText>{detail.comment}</CommentText>
     </DetailCommentWrapper>
   );
 };
