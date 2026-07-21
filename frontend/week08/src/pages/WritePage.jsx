@@ -10,21 +10,21 @@ const WritePage = () => {
   const navigate = useNavigate();
   const [author, setAuthor] = useState("");
   const [comment, setComment] = useState("");
-  const baseURL = import.meta.env.VITE_API_BASE_URL;
 
   const postComment = () => {
     axios
-      .post(`${baseURL}/entries/`, {
+      .post("http://127.0.0.1:8000/entries/", {
         author: author,
         comment: comment,
       })
       .then((res) => {
+        alert("게시글 작성이 완료되었어요 ! ! 🦁");
         console.log("게시글 작성이 완료되었습니다.");
         navigate("/");
       })
       .catch((err) => {
         console.log(err);
-        alert("게시글 작성에 실패했습니다.");
+        alert("게시글 작성에 실패했어요 . . 😓");
       });
   };
   return (
