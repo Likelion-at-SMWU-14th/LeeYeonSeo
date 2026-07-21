@@ -1,21 +1,15 @@
 import styled from "styled-components";
 
-const CommentForm = ({ setAuthor, setComment }) => {
+const CommentForm = () => {
   return (
     <FormWrapper>
       <InputWrapper>
         <Label>이름</Label>
-        <Input
-          placeholder="이름을 입력해주세요"
-          onChange={(e) => setAuthor(e.target.value)}
-        />
+        <Input placeholder="이름을 입력해주세요" />
       </InputWrapper>
       <InputWrapper>
         <Label>내용</Label>
-        <TextArea
-          placeholder="내용을 입력해주세요"
-          onChange={(e) => setComment(e.target.value)}
-        />
+        <TextArea placeholder="내용을 입력해주세요" />
       </InputWrapper>
     </FormWrapper>
   );
